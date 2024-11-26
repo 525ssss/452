@@ -1,0 +1,257 @@
+/*Curry Shen Chenlingjun*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffa600;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    right: 0;   
+    top: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #af8537;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, .category-list a:hover {
+    background-color: #777;
+}
+
+.whole {
+    display: flex;
+}
+
+.Left {
+    width: 20%; /* 左侧栏宽度 */
+    background-color: #f0f0f0; /* 背景颜色 */
+}
+
+main {
+    width: 80%; /* 主内容区宽度 */
+    padding: 1em;
+}
+
+footer {
+    background-color: rgb(68, 59, 58);
+    position: fixed; /* 固定在底部 */
+    bottom: 0; /* 底部对齐 */
+    width: 100%;
+    text-align: center;
+    padding: 0.1em;/*大小*
+    z-index: 1000; /* 确保footer在最上层 */
+}
+
+.productL, .productR, .middle {
+    position: absolute;
+    width: 20%;
+    background-color: grey;
+}
+
+.productL { left: 0; }
+.productR { right: 0; }
+.middle { left: 20%; border: 1px solid black; width: 60%; }
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li, .product-list {
+    margin: 0;
+}
+
+.category-list a, .product-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 0;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+}
+
+.membership, .deals, .membership-options, .deal-countdown {
+    margin-bottom: 30px;
+}
+
+.membership-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membership-options button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.membership-options button:hover {
+    background-color: #0056b3;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.product-item h3, .product-item p {
+    margin: 5px 0;
+}
+
+.product-item h3 { font-size: 18px; }
+.product-item p { color: #ff4d4f; }
+
+.gallery img {
+    width: 200px; /* 根据需要调整宽度 */
+    height: 300px; /* 根据需要调整高度 */
+    transition: transform 0.3s ease; /* 平滑缩放效果 */
+}
+
+.gallery, .product-image {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.gallery:hover, .product-image:hover {
+    border: 1px solid #777;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info, .review, .product-feature, .call-to-action {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-info h1, .call-to-action h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #f7c602;
+}
+
+.product-info p, .review h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.buy-now, .call-to-action a {
+    background-color: #eaf700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.buy-now:hover, .call-to-action a:hover {
+    background-color: #9ca9a2;
+}
+
+.support-flowchart, .contact-info, .team-section {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background-color: #ebebeb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin:0  auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-style: italic;
+    color: #777;
+}
